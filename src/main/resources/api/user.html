@@ -1,0 +1,84 @@
+
+<h2>User</h2>
+
+<table>
+<tr><td><b>Title:</b></td><td><u>Create user</u></td></tr>
+<tr><td><b>URL:</b></td><td>/user/createUser</td></tr>
+<tr><td><b>Method:</b></td><td>GET</td></tr>
+<tr><td><b>Succes response:</b></td><td>Code: 200</td></tr>
+<tr><td></td><td>Example: <br>
+[{"id":1,"name":"Raul","surname":"Maiz","email":"raulmaiz@tmail.com","password":"Primera1"},{"id":2,"name":"Jordi","surname":"Milla","email":"krovad@hotmail.com","password":"Primera2"}]
+</td></tr>
+<tr><td><b>Error response:</b></td><td>Code: 204</td></tr>
+<tr><td><b></b></td><td>Content: { error : "xxx" }</td></tr>
+</table>
+<br><br>
+<table>
+<tr><td><b>Title:</b></td><td><u>Do Login</u></td></tr>
+<tr><td><b>URL:</b></td><td>/user/doLogin</td></tr>
+<tr><td><b>Method:</b></td><td>GET</td></tr>
+<tr><td><b>Succes response:</b></td><td>Code: 200</td></tr>
+<tr><td></td><td>Example: <br>
+/user/doLogin?email=raulmaiz@gmail.com&password=Primera1</td></tr>
+<tr><td><b>Error response:</b></td><td>Code: 204</td></tr>
+<tr><td><b></b></td><td>Content: { error : "xxx" }</td></tr>
+</table>
+<br><br>
+<table>
+<tr><td><b>Title:</b></td><td><u>Show all users (default)</u></td></tr>
+<tr><td><b>URL:</b></td><td>/user/</td></tr>
+<tr><td><b>Method:</b></td><td>GET</td></tr>
+<tr><td><b>Succes response:</b></td><td>Code: 200</td></tr>
+<tr><td></td><td>Example: <br>
+[{"id":1,"name":"Raul","surname":"Maiz","email":"raulmaiz@tmail.com","password":"Primera1"},{"id":2,"name":"Jordi","surname":"Milla","email":"krovad@hotmail.com","password":"Primera2"}]
+</td></tr>
+<tr><td><b>Error response:</b></td><td>Code: 204</td></tr>
+<tr><td><b></b></td><td>Content: { error : "xxx" }</td></tr>
+</table>
+<br><br>
+<table>
+<tr><td><b>Title:</b></td><td><u>Find user by id (default)</u></td></tr>
+<tr><td><b>URL:</b></td><td>/user/{id}</td></tr>
+<tr><td><b>Method:</b></td><td>GET</td></tr>
+<tr><td><b>Succes response:</b></td><td>Code: 200</td></tr>
+<tr><td></td><td>Example: <br>
+{"id":1,"name":"Raul","surname":"Maiz","email":"raulmaiz@tmail.com","password":"Primera1"}
+</td></tr>
+<tr><td><b>Error response:</b></td><td>Code: 204</td></tr>
+<tr><td><b></b></td><td>Content: { error : "xxx" }</td></tr>
+</table>
+<br><br>
+<table>
+<tr><td><b>Title:</b></td><td><u>Create user (default)</u></td></tr>
+<tr><td><b>URL:</b></td><td>/user/</td></tr>
+<tr><td><b>Method:</b></td><td>POST</td></tr>
+<tr><td><b>Succes response:</b></td><td>Code: 200</td></tr>
+<tr><td></td><td>Example: <br>
+{"id":1,"name":"Raul","surname":"Maiz","email":"raulmaiz@gmail.com","password":"Primera1"}
+</td></tr>
+<tr><td><b>Error response:</b></td><td>Code: 204</td></tr>
+<tr><td><b></b></td><td>Content: { error : "xxx" }</td></tr>
+</table>
+<br><br>
+<table>
+<tr><td><b>Title:</b></td><td><u>Update user (default)</u></td></tr>
+<tr><td><b>URL:</b></td><td>/user/{id}</td></tr>
+<tr><td><b>Method:</b></td><td>PUT</td></tr>
+<tr><td><b>Succes response:</b></td><td>Code: 200</td></tr>
+<tr><td></td><td>Example: <br>
+{"id":1,"name":"Raul","surname":"Maiz","email":"raulmaiz@tmail.com","password":"Primera1"}
+</td></tr>
+<tr><td><b>Error response:</b></td><td>Code: 204</td></tr>
+<tr><td><b></b></td><td>Content: { error : "xxx" }</td></tr>
+</table>
+<br><br>
+<table>
+<tr><td><b>Title:</b></td><td><u>Delete user (default)</u></td></tr>
+<tr><td><b>URL:</b></td><td>/user/{id}</td></tr>
+<tr><td><b>Method:</b></td><td>DELETE</td></tr>
+<tr><td><b>Succes response:</b></td><td>Code: 204</td></tr>
+</td></tr>
+<tr><td><b>Error response:</b></td><td>Code: 404</td></tr>
+<tr><td><b></b></td><td>Content: { error : "xxx" }</td></tr>
+</table>
+        		

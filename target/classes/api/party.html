@@ -1,0 +1,60 @@
+
+<h2>Party</h2>
+
+<table>
+<tr><td><b>Title:</b></td><td><u>Show all parties (default)</u></td></tr>
+<tr><td><b>URL:</b></td><td>/party/</td></tr>
+<tr><td><b>Method:</b></td><td>GET</td></tr>
+<tr><td><b>Succes response:</b></td><td>Code: 200</td></tr>
+<tr><td></td><td>Example: <br>
+{"id":1,"name":"party co","capacity":4,"level":6,"longitude":654654,"latitude":6565,"starts":1500327584000,"duration":60,"status":2,"price":40},{"id":2,"name":"party loosers","capacity":4,"level":6,"longitude":654654,"latitude":6565,"starts":1500327587000,"duration":90,"status":2,"price":40}</td></tr>
+<tr><td><b>Error response:</b></td><td>Code: 204</td></tr>
+<tr><td><b></b></td><td>Content: { error : "xxx" }</td></tr>
+</table>
+<br><br>
+<table>
+<tr><td><b>Title:</b></td><td><u>Find party by id (default)</u></td></tr>
+<tr><td><b>URL:</b></td><td>/party/{id}</td></tr>
+<tr><td><b>Method:</b></td><td>GET</td></tr>
+<tr><td><b>Succes response:</b></td><td>Code: 200</td></tr>
+<tr><td></td><td>Example: <br>
+{"id":1,"name":"party co","capacity":4,"level":6,"longitude":654654,"latitude":6565,"starts":1500327584000,"duration":60,"status":2,"price":40}
+</td></tr>
+<tr><td><b>Error response:</b></td><td>Code: 204</td></tr>
+<tr><td><b></b></td><td>Content: { error : "xxx" }</td></tr>
+</table>
+<br><br>
+<table>
+<tr><td><b>Title:</b></td><td><u>Create party (default)</u></td></tr>
+<tr><td><b>URL:</b></td><td>/party/</td></tr>
+<tr><td><b>Method:</b></td><td>POST</td></tr>
+<tr><td><b>Succes response:</b></td><td>Code: 200</td></tr>
+<tr><td></td><td>Example: <br>
+{"id":1,"name":"party co","capacity":4,"level":6,"longitude":654654,"latitude":6565,"starts":1500327584000,"duration":60,"status":2,"price":40},{"id":2,"name":"party loosers","capacity":4,"level":6,"longitude":654654,"latitude":6565,"starts":1500327587000,"duration":90,"status":2,"price":40}
+</td></tr>
+<tr><td><b>Error response:</b></td><td>Code: 204</td></tr>
+<tr><td><b></b></td><td>Content: { error : "xxx" }</td></tr>
+</table>
+<br><br>
+<table>
+<tr><td><b>Title:</b></td><td><u>Update party (default)</u></td></tr>
+<tr><td><b>URL:</b></td><td>/party/{id}</td></tr>
+<tr><td><b>Method:</b></td><td>PUT</td></tr>
+<tr><td><b>Succes response:</b></td><td>Code: 200</td></tr>
+<tr><td></td><td>Example: <br>
+{"id":1,"name":"party co","capacity":4,"level":6,"longitude":654654,"latitude":6565,"starts":1500327584000,"duration":60,"status":2,"price":40}
+</td></tr>
+<tr><td><b>Error response:</b></td><td>Code: 204</td></tr>
+<tr><td><b></b></td><td>Content: { error : "xxx" }</td></tr>
+</table>
+<br><br>
+<table>
+<tr><td><b>Title:</b></td><td><u>Delete party (default)</u></td></tr>
+<tr><td><b>URL:</b></td><td>/party/{id}</td></tr>
+<tr><td><b>Method:</b></td><td>DELETE</td></tr>
+<tr><td><b>Succes response:</b></td><td>Code: 204</td></tr>
+</td></tr>
+<tr><td><b>Error response:</b></td><td>Code: 404</td></tr>
+<tr><td><b></b></td><td>Content: { error : "xxx" }</td></tr>
+</table>
+        		

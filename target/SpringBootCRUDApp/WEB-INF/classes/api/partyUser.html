@@ -1,0 +1,60 @@
+
+<h2>PartyUser</h2>
+
+<table>
+<tr><td><b>Title:</b></td><td><u>Show all partyUsers (default)</u></td></tr>
+<tr><td><b>URL:</b></td><td>/partyUser/</td></tr>
+<tr><td><b>Method:</b></td><td>GET</td></tr>
+<tr><td><b>Succes response:</b></td><td>Code: 200</td></tr>
+<tr><td></td><td>Example: <br>
+[{"id":1,"idParty":1,"idUser":1,"admin":true},{"id":2,"idParty":1,"idUser":2,"admin":false},{"id":3,"idParty":1,"idUser":3,"admin":false},{"id":4,"idParty":1,"idUser":4,"admin":false}]</td></tr>
+<tr><td><b>Error response:</b></td><td>Code: 204</td></tr>
+<tr><td><b></b></td><td>Content: { error : "xxx" }</td></tr>
+</table>
+<br><br>
+<table>
+<tr><td><b>Title:</b></td><td><u>Find userParty by id (default)</u></td></tr>
+<tr><td><b>URL:</b></td><td>/partyUser/{id}</td></tr>
+<tr><td><b>Method:</b></td><td>GET</td></tr>
+<tr><td><b>Succes response:</b></td><td>Code: 200</td></tr>
+<tr><td></td><td>Example: <br>
+{"id":1,"idParty":1,"idUser":1,"admin":true}
+</td></tr>
+<tr><td><b>Error response:</b></td><td>Code: 204</td></tr>
+<tr><td><b></b></td><td>Content: { error : "xxx" }</td></tr>
+</table>
+<br><br>
+<table>
+<tr><td><b>Title:</b></td><td><u>Update userParty (default)</u></td></tr>
+<tr><td><b>URL:</b></td><td>/partyUser/{id}</td></tr>
+<tr><td><b>Method:</b></td><td>PUT</td></tr>
+<tr><td><b>Succes response:</b></td><td>Code: 200</td></tr>
+<tr><td></td><td>Example: <br>
+{"id":1,"idParty":1,"idUser":1,"admin":true}
+</td></tr>
+<tr><td><b>Error response:</b></td><td>Code: 204</td></tr>
+<tr><td><b></b></td><td>Content: { error : "xxx" }</td></tr>
+</table>
+<br><br>
+<table>
+<tr><td><b>Title:</b></td><td><u>Create partyUser (default)</u></td></tr>
+<tr><td><b>URL:</b></td><td>/partyUser/</td></tr>
+<tr><td><b>Method:</b></td><td>POST</td></tr>
+<tr><td><b>Succes response:</b></td><td>Code: 200</td></tr>
+<tr><td></td><td>Example: <br>
+{"id":1,"idParty":1,"idUser":1,"admin":true}
+</td></tr>
+<tr><td><b>Error response:</b></td><td>Code: 204</td></tr>
+<tr><td><b></b></td><td>Content: { error : "xxx" }</td></tr>
+</table>
+<br><br>
+<table>
+<tr><td><b>Title:</b></td><td><u>Delete userParty (default)</u></td></tr>
+<tr><td><b>URL:</b></td><td>/partyUser/{id}</td></tr>
+<tr><td><b>Method:</b></td><td>DELETE</td></tr>
+<tr><td><b>Succes response:</b></td><td>Code: 204</td></tr>
+</td></tr>
+<tr><td><b>Error response:</b></td><td>Code: 404</td></tr>
+<tr><td><b></b></td><td>Content: { error : "xxx" }</td></tr>
+</table>
+        		
